@@ -1,0 +1,251 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.active{
+  position: relative;
+  color: royalblue;
+}
+
+.active:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: royalblue;
+  bottom: 0;
+  left: 0;
+}
+
+.navbar > li> a, .logo{
+  display: inline-block;
+  padding: 12px 8px;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+
+}
+.navbar > li:hover> a, .logo:hover{
+  color: royalblue;
+}
+.navbar > li> a:after{
+  content:'';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: royalblue;
+  bottom: 0;
+  left: 0;
+  transition: .2s ease-in-out;
+  
+}
+
+/*.navbar > li:hover >a:after{
+  width: 100%;
+}*/
+
+.navbar .submenu-container:hover >a:after{
+  width: 100%;
+}
+
+.logo{
+  padding: 8px;
+}
+.chevron-down-icon{
+  margin-left: -4px;
+  padding: 0 !important;
+  transform: translateY(25%);
+  transition: .2s ease-in-out;
+}
+.chevron-down-icon:after{
+  display: none !important;
+}
+.submenu-container{
+  position: relative;
+
+}
+.submenu-container:hover .submenu{
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+}
+.submenu-container:hover .chevron-down-icon{
+  transform: rotate(180deg) translateY(-15%);
+  transform-origin: 50% 50%;
+}
+.submenu{
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  width: 270px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-top: none;
+  transition: .2s ease-in-out;
+  transform: translateY(50px);
+  opacity: 0;
+  z-index: 99;
+}
+.submenu > li{
+  margin-right: 0px !important;
+}
+.submenu > li > a{
+  width: 100%;
+  display: inline-block;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  padding: 8px 12px 8px 12px;
+
+  transition: .2s ease-in-out;
+}
+.submenu > li > a:hover{
+  background: royalblue;
+  color: white;
+}
+
+
+/* slider */
+.custom-dot-list-style{
+  bottom: 20px !important;
+}
+.react-multi-carousel-dot--active button{
+  background: #fff !important;
+}
+
+
+.react-multi-carousel-dot button{
+  border-color: #999 !important;
+}
+
+.section-title{
+  text-align: left;
+  padding: 12px 0px 12px 20px;
+  position: relative;
+
+}
+.section-title:after{
+  position: absolute;
+  content:'';
+  display: block;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #333;
+}
+
+.section-center-title{
+  text-align: center;
+  margin: 8px 0;
+  padding: 24px 0px 12px 0px;
+  position: relative;
+}
+.section-center-title:after{
+  position: absolute;
+  content:'';
+  display: block;
+  top: bottom;
+  left: 0;
+  background: #333;
+}
+
+.paragraph-center{
+  text-align: justify;
+  width: 90%;
+  margin-bottom: 12px;
+}
+
+.see-more-link{
+}
+
+.header{
+z-index: 10000000;
+}
+.footer span{
+  width: 100%;
+  display: block !important;
+}
+.footer svg{
+  color: white;
+  transition: .2s ease-in-out;
+
+}
+.footer svg:hover{
+  color: #93C5E1;
+  
+}
+
+.fix_tel {
+    position: fixed;
+    bottom: 58px;
+    left: 18px;
+    z-index: 999;
+}
+
+.fix_tel a {
+    text-decoration: none;
+    display: block;
+}
+
+#app {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #3B82F6;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    line-height: 1;
+    border-radius: 50%;
+    animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
+}
+
+#app i {
+    text-shadow: 0 2px 10px #b52217;
+    animation: changeSize 1s cubic-bezier(0,0,0,0) 0s infinite;
+}
+
+@keyframes pulse {
+    0% {box-shadow: 0 0 0 0 #12679260;}
+    25% {box-shadow: 0 0 0 5px #12679260;}
+    50% {box-shadow: 0 0 0 10px #199ee060;}
+    75% {box-shadow: 0 0 0 15px #199ee160;}
+    100% {box-shadow: 0 0 0 20px #ffffff60;}
+}
+
+@keyframes changeSize {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.2); }
+    50% { transform: scale(0.8); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.fix_chat {
+    position: fixed;
+    bottom: 58px;
+    right: 18px;
+    z-index: 999;
+}
+.mapouter{
+  position:relative;
+  text-align:right;
+  width:100%;
+  height:400px;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  width:100%;
+  height:400px;
+}
+.gmap_iframe {
+  height:400px!important;
+}
+
+.info-icon svg{
+  width: 20px;
+  height: 20px;
+}

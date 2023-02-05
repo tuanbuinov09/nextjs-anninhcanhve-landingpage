@@ -15,7 +15,7 @@ const navigationRoutes = [
     subPath: [
       { path: '/greeting', text: 'Thư ngỏ' },
       { path: '/founding-history', text: 'Lịch sử hình thành' },
-      { path: '/view-mission', text: 'Tầm nhìn - Sứ mệnh' },
+      { path: '/vision-mission', text: 'Tầm nhìn - Sứ mệnh' },
       { path: '/core-value', text: 'Giá trị cốt lõi' },
     ],
   },

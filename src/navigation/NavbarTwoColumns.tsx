@@ -62,7 +62,7 @@ const navigationRoutes = [
     path: '/recruit-training',
     text: 'Tuyển dụng - đào tạo',
     subPath: [
-      { path: '/recuit', text: 'Tuyển Dụng Nhân Viên Bảo Vệ' },
+      { path: '/recruit', text: 'Tuyển Dụng Nhân Viên Bảo Vệ' },
       { path: '/training', text: 'Đào Tạo Nghiệp Vụ Bảo Vệ' },
     ],
   },

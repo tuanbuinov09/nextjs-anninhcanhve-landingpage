@@ -26,11 +26,11 @@ const itemList: any[] = [
     text: 'Dịch Vụ Bảo Vệ Doanh Nghiệp - Bảo Vệ Công Ty',
   },
   {
-    path: 'about/event-security',
+    path: '/event-security',
     text: 'Dịch Vụ Bảo Vệ Sự Kiện - Yếu Nhân',
   },
   {
-    path: 'about/profile',
+    path: '/profile',
     text: 'Hồ Sơ Năng Lực',
   },
 ];

@@ -249,3 +249,20 @@ z-index: 10000000;
   width: 20px;
   height: 20px;
 }
+
+.a-table{
+
+}
+.a-table th{
+  padding: 4px 12px;
+  border: 1px solid gray;
+}
+.a-table td{
+  padding: 4px 4px 4px 12px;
+  border: 1px solid gray;
+}
+
+.b-table td{
+padding: 4px 6px;}
+.b-table th{
+padding: 4px 8px;}

@@ -2,35 +2,35 @@ import { ServiceVerticleItem } from './ServiceVerticleItem';
 
 const itemList: any[] = [
   {
-    path: 'about/binh-duong-bank-security',
+    path: '/services/binh-duong-bank-security',
     text: 'Dịch Vụ Bảo Vệ Ngân Hàng Bình Dương',
   },
   {
-    path: 'about/house-security',
+    path: '/services/house-security',
     text: 'Dịch Vụ Bảo Vệ Tòa Nhà - Bảo Vệ Chung Cư',
   },
   {
-    path: 'about/enterprise-security-advise',
+    path: '/services/enterprise-security-advise',
     text: 'Dịch Vụ Tư Vấn An Ninh Doanh Nghiệp',
   },
   {
-    path: 'about/free-law-advise',
+    path: '/services/free-law-advise',
     text: 'Dịch Vụ Tư Vấn Luật Miễn Phí',
   },
   {
-    path: 'about/binh-duong-security',
+    path: '/services/binh-duong-security',
     text: 'Dịch Vụ Bảo Vệ Bình Dương',
   },
   {
-    path: '/enterprise-security',
+    path: '/services/enterprise-security',
     text: 'Dịch Vụ Bảo Vệ Doanh Nghiệp - Bảo Vệ Công Ty',
   },
   {
-    path: '/event-security',
+    path: '/services/event-security',
     text: 'Dịch Vụ Bảo Vệ Sự Kiện - Yếu Nhân',
   },
   {
-    path: '/profile',
+    path: '/services/profile',
     text: 'Hồ Sơ Năng Lực',
   },
 ];
